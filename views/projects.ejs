@@ -1,0 +1,33 @@
+<!-- Jiaying Song
+301172953 -->
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Projects<%= title %>:</h1>
+      <!--First Project:  Motion Tracking Dance Machine using FPGA-->
+      <div>
+        <img src="/Assets/images/fpga.jpg" alt="project1" class="rounded float-start" width="40%" hspace="30">
+        <h1 id="lgreen"> Motion Tracking Dance Machine using FPGA</h1>
+    <h3 id="introduce"> Implemented Verilog code to provide different mono audio outputs with Xilinx Nexys 4 DDR Artix-7 FPGA board and a video camera to track and detect human (upper-body) movements. Made the VGA monitor displayed a real-time 2D dancing figure.</h3>
+    </div><br><br><br><br><br>
+    <!--Second Project: Line following rojobot using Nexys FPGA-->
+    <div>
+        <img src="/Assets/images/robot.jpg" alt="project2" class="rounded float-end" width="40%" hspace="30">
+        <h1 id="lgreen"> Line following rojobot using Nexys FPGA:</h1>
+    <h3 id="introduce"> Developed firmware to implement the line following algorithm on Xilinx PicoBlaze softcore 8-bit microprocessor. Implemented VGA controller interface logic on Nexys 4 board to display bot icon and world map on the screen.</h3>
+    </div><br><br><br><br><br>
+    <!--Third Project: Design and Layout of Digital CMOS Circuits-->
+    <div>
+        <img src="/Assets/images/cmos.png" alt="project3" class="rounded float-start" width="25%" hspace="30">
+        <h1 id="lgreen"> Design and Layout of Digital CMOS Circuits</h1>
+    <h3 id="introduce"> Designed standard logic cells, And Or Inverter and static inverter with different NMOS and PMOS sizing in Cadence Virtuoso. Designed layouts of full custom and sea of gates standard cells for AOI21 and inverter and performed DRC and LVS. Implemented circuit simulation in Spectre.</h3>
+    </div>
+</div>
+  </main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
